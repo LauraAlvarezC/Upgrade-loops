@@ -9,6 +9,15 @@ const toys = [
     {id: 40, name: 'El gato felix'}
     ]
 
-    for (i=0; i<toys.length; i++) {
-        if(toys[i].name.includes("gato"))
+for (i=0; i<=toys.length-1; i++){
+
+    if(toys[i].name.includes('gato') === true) {
+        delete(toys[i])
+
     }
+}
+
+
+console.log(toys);
+
+
